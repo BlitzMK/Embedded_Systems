@@ -1,0 +1,12 @@
+AREA    |.text|, CODE, READONLY, ALIGN=2
+        THUMB
+sum3 PROC
+	EXPORT sum3
+	ADD R3, R0, R1
+	ADD R3, R3, R2
+	MOV R0, R3
+	BX  LR
+	ENDP
+	
+	ALIGN
+	END
